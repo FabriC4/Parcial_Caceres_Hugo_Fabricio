@@ -1,0 +1,285 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Enlaces Generales */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* --------- Cabecera (Header) --------- */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* --------- Navegación (Nav) --------- */
+nav {
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+/* --------- Área Principal (Main) --------- */
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* --------- Secciones Comunes (Section) --------- */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #444;
+    border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* --------- Estilos de Formularios --------- */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="password"],
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff6600;
+}
+
+/* --------- Mensaje de Bienvenida --------- */
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el botón de salida */
+a[href*="salir"] {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+a[href*="salir"]:hover {
+    background-color: #ff3300;
+}
+
+/* --------- Footer (Pie de página) --------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* --------- Estilos Responsivos (Responsive Design) --------- */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form button {
+        width: 100%;
+    }
+}
+
+
+#slider-destacadas {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.slide h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.slide p {
+    font-size: 1em;
+}
+
+.propiedades-destacadas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.propiedad {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.propiedad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.propiedad h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.propiedad p {
+    font-size: 1em;
+    color: #666;
+}
+
+.propiedades-disponibles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.propiedad {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.propiedad img {
+    max-width: 100%;
+    height: auto;
+}
+
+.propiedad h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.propiedad p {
+    font-size: 1em;
+    color: #666;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
